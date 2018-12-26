@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Al-un/css.svg?branch=master)](https://travis-ci.com/Al-un/css)
+
 # CSS Tournament
 
 Comparing CSS frameworks
