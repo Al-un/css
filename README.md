@@ -27,6 +27,12 @@ yarn install
 npm install
 ```
 
+Run the appropriate script and check `http://localhost:8080`. Available scripts
+are:
+
+- `yarn run bootstrap4`
+- `yarn run bulma`
+
 ## Folder structure
 
 Each folder represents a given CSS framework. If a framework is tested under
