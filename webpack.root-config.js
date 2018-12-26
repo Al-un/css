@@ -32,10 +32,20 @@ function devConfig(framework, options) {
       },
       // Plugins
       plugins: [
+        // https://github.com/jantimon/html-webpack-plugin
         new HtmlWebpackPlugin({
           title: framework.name,
           template: path.resolve(__dirname, framework.folder, 'index.html'),
-          filename: './index.html'
+          filename: 'index.html',
+          // https://github.com/joshbuchea/HEAD#meta
+          meta: {
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
+            'theme-color': '#1fa3c4',
+            description: `Testing ${framework.name} framework`
+          },
+          // for reading/debugging
+          minify: false
         }),
         new CleanWebpackPlugin([`dist/${framework.folder}`]),
         new ManifestPlugin(),
