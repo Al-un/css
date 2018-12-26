@@ -1,15 +1,12 @@
 language: node_js
 node_js: 
   - "node"
-  # - "11.1.0"
 cache:
   directories:
-    - 'node_modules'
+    - node_modules
 
 env:
   global:
-    # Publication path
-    - DEPLOY_URL=https://al-un.github.io/css/
     # $GITHUB_TOKEN
     secure: "buMHpBtqq0CVAY0wYY+a9bksPucRvW9pZEdfBSKxJZ03gm2BPE0Ja6MMeoNz6VOS3Tvd5b+QXETJ8Skvngh0uVm4IDxuoCEo0qEcEBBhSZDrvlikBWEWtOttOG1NNJD5+9dYhjsogmCfmZl5McRYE46qqb5q6E1weuTQjzeoOZ05MeuRS7Ly039/Wa/0CnqhIDcXC9LJA7gQtSTDAyN5ZvjUZiH+6zBCs6Usqx2VoNReWo+70L/CaxAqKRoXzB2ESPuusr7DJl/xI9+2t4eftRPG+4cYqJ+VjPM4zSLlEBTcc9SKB8rR2/kLcIb95Dh9IkLuiiDI8JIbsh3AwcGpRR/fXkOLKw6obqWg+ll7vBNayObC4rO/F+tNbQjifyLCJneQGqw4Vt+OQhxs2Bqw0SW19XnwQVGpKDqoxOfkLJ/uLtXxZLEhT8WyY9yhZ9ODz1tqpdvIWSu1eTyUgaiSYhQ3bFeI9tJB3rplSQ8KRROOmT8jGssw3ti38ZO0/HA/51R+bkU7lN4JE4AhTq4E/l8hJCUN6baIqROOty1JYD0AR+h/xn6K5hz3hdxmb77gf6AnUFR2PbPOwasm7xKkFyQOnjHG5Plrl6NoUloaCbEBg2vMQleAEyeWOd+ISOVZqWrfo4QC5jMFo5IB1tyWJKSYkGhAe4aKQk1p82VeOpo="
 
