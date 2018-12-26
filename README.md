@@ -7,6 +7,7 @@ Objective is to compare CSS frameworks about:
 - Capabilities
 - Usage, learning curve and stuff
 - SCSS support
+- Theming
 
 Not tested:
 
