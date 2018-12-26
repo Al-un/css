@@ -1,0 +1,34 @@
+{
+  "name": "css-comparison",
+  "version": "1.0.0",
+  "description": "Comparing CSS frameworks",
+  "main": "index.js",
+  "repository": "https://github.com/Al-un/css.git",
+  "author": "Al-un",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "scripts": {
+    "bootstrap4": "webpack-dev-server --config bootstrap4/webpack.config.js",
+    "bootstrap4-build": "webpack --config bootstrap4/webpack.config.js",
+    "bulma": "webpack-dev-server --config bulma/webpack.config.js",
+    "bulma-build": "webpack --config bulma/webpack.config.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "bulma": "^0.7.2"
+  }
+}
