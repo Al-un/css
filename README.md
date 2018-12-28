@@ -55,6 +55,18 @@ For each framework or framework+version, create a NPM script in `package.json`:
 
 Windows users may encounter problems with `node-sass` v4.7.x. Version `4.11.0` is working.
 
+FontAwesome:
+Added by `<link ... />`. NPM install encountered problems:
+
+https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers
+
+```scss
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+```
+
+https://remotedevdaily.com/how-to-use-font-awesome-5-with-react/
+https://medium.com/@chanonroy/webpack-2-and-font-awesome-icon-importing-59df3364f35c
+
 **Bootstrap**
 
 https://getbootstrap.com/docs/4.2/getting-started/webpack/
