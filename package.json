@@ -26,7 +26,8 @@
     "bootstrap4-build": "webpack --config bootstrap4/webpack.config.js",
     "bulma": "webpack-dev-server --config bulma/webpack.config.js",
     "bulma-build": "webpack --config bulma/webpack.config.js",
-    "raw": "webpack-dev-server --config raw/webpack.config.js"
+    "raw": "webpack-dev-server --config raw/webpack.config.js",
+    "root-build": "webpack --config root/webpack.config.js"
   },
   "dependencies": {
     "bootstrap": "^4.2.1",

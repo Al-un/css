@@ -12,7 +12,8 @@ const ManifestPlugin = require('webpack-manifest-plugin');
  * @param {Object} options framework specific parameters
  */
 function devConfig(framework, options) {
-  const outputFolder = framework.output || framework.folder;
+  const outputFolder =
+    'output' in framework ? framework.output : framework.folder;
 
   return Object.assign(
     {
@@ -49,7 +50,7 @@ function devConfig(framework, options) {
           // for reading/debugging
           minify: false
         }),
-        new CleanWebpackPlugin([`dist/${framework.folder}`]),
+        new CleanWebpackPlugin([`dist/${outputFolder}`]),
         new ManifestPlugin(),
         new webpack.HotModuleReplacementPlugin()
       ],
