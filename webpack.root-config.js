@@ -12,6 +12,8 @@ const ManifestPlugin = require('webpack-manifest-plugin');
  * @param {Object} options framework specific parameters
  */
 function devConfig(framework, options) {
+  const outputFolder = framework.output || framework.folder;
+
   return Object.assign(
     {
       // Input/Outpus management
@@ -20,7 +22,7 @@ function devConfig(framework, options) {
       },
       output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist', framework.folder),
+        path: path.resolve(__dirname, 'dist', outputFolder),
         publicPath: '/'
       },
       // Building mode
