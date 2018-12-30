@@ -14,10 +14,11 @@ install:
   - yarn install
 
 script:
+  # build successive CSS framework demo. Order matters!!! Because of cleaning
   - yarn run root-build --output-public-path https://al-un.github.io/css/
   - yarn run bootstrap4-build --output-public-path https://al-un.github.io/css/bootstrap4
   - yarn run bulma-build --output-public-path https://al-un.github.io/css/bulma
-  - ls
+  # Ensure builds are properly done
   - ls dist/
 
 deploy:
@@ -27,10 +28,16 @@ deploy:
   local-dir: dist
   keep-history: true
   verbose: true
-  # on:
-  #   branch: master
+  # build on master only
+  on:
+    branch: master
   # default values
   target-branch: gh-pages
 
 notifications:
   email: false
+  slack:
+    rooms:
+      - secure: 'KGyGvZhLCiGTp9m6hTNrQxY3ygiLXiE9X1u/ThIMqwZlLd/4/30ZrTqj0rsyM8YBZIBZ0vN/M7SNv9a7z/nYWUNBEDueHoU0W+B9FNNU1epLHDbDhrOgSO1+apGptd17MTP+9RZ9jYomKwmg8VSlztpsfDyBKw9i1njKI4h6JyB3CKWTa+CvIoGMlgq7iuvLBgfBXDawwB6vS1mdfRds3dEZGJ/lwywfXf16NnH2DAo/F/eViDzdkJj8Y2Vem+imFbN5Q/Uh2zsCpsCWCIP74i8TFtcHF4r6WL/KYgbpVYA0BMMiEJfPBRxqMuVBwQfEoOHG/u96gj6V2H/CbP0MS+mmS2Jo4py9ULyx2w9oeFVn/apLe3mISfdfpTPkOEkj/F4a2nLBUhz6kF1PuObZT5+KyNqXpsXiZ3yT2gOHq9fk1Mh5eTnwVXghyb5chzA1fNLEjE46X4FUPImwAbG7MlBzfR5aSH3kGzQy7VvRsjOVd6ZzYSaaHe3eHoKtlm+BMfly5NTYmaBdbvyPH6rIpLJnkQ+EzsrzTuWinIk0uVoTIJ/CV77ZYQH7hpLtrQ8Jyx3BI2xC4kTuZ/RWy+b9l0BQrWkgwsdHALbZSAgBwll34nJfhuhaMQlCeXRNkbrECUqBnEYoxPs24azfPJN/HEh4TizQV/B2ehzGladoDyk='
+    on_success: always
+    on_failure: always
