@@ -1,4 +1,10 @@
 {
   "main.js": "https://al-un.github.io/css/bootstrap4main.js",
+  "html/data.html": "https://al-un.github.io/css/bootstrap4html/data.html",
+  "html/form.html": "https://al-un.github.io/css/bootstrap4html/form.html",
+  "html/home.html": "https://al-un.github.io/css/bootstrap4html/home.html",
+  "html/modal.html": "https://al-un.github.io/css/bootstrap4html/modal.html",
+  "html/notification.html": "https://al-un.github.io/css/bootstrap4html/notification.html",
+  "html/panel.html": "https://al-un.github.io/css/bootstrap4html/panel.html",
   "index.html": "https://al-un.github.io/css/bootstrap4index.html"
 }
