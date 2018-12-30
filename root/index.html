@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>CSS tournament</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
-  <body>
-    <p>Tested frameworks:</p>
-    <ul>
-      <li>
-        <a href="/css/bootstrap4/">Bootstrap4</a>
+  <body class="has-background-dark">
+    <!-- Main presentation -->
+    <div class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">CSS tournament</h1>
+          <p class="subtitle">Test your might!</p>
+          <p>
+            Comparing CSS framework and see how it renders and what it takes to
+            use
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <main id="content" class="section container">
+      <div class="box content">
+        <p>
+          Some feedback about the frameworks. Such opinions are mine only and
+          are strongly biased by
+        </p>
         <ul>
-          <li>Quite verbose</li>
-          <li>Not embedded icons pack</li>
+          <li>
+            I was already familiar with CSS grid syntax. With a Java background,
+            my first really heavy CSS writing was with
+            <a href="https://www.primefaces.org/">PrimeFaces</a> and all
+            <a href="https://en.wikipedia.org/wiki/JavaServer_Faces">JSF</a>
+            related styling.
+          </li>
+          <li>My own coding style preferences</li>
         </ul>
-      </li>
-      <li>
-        <a href="/css/bulma/">Bulma</a>
-        <ul>
-          <li>No included JavaScript</li>
-        </ul>
-      </li>
-    </ul>
+      </div>
+
+      <!-- cards go here -->
+      <div class="columns"></div>
+    </main>
   </body>
 </html>
