@@ -1,6 +1,9 @@
+// Styles
 import '../common/common.scss';
 import './app.scss';
+// Common JavaScript
 import * as Common from '../common';
+// Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
 import './html/form.html';
