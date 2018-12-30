@@ -1,3 +1,4 @@
+// A bit of nice layout
 body {
     margin: 0;
     min-height: 100vh;
@@ -5,6 +6,12 @@ body {
     flex-direction: column;
 }
 
+// To ensure footer is at the bottom 
 main#content {
     flex: 1;
+}
+
+// Usually for tag to be display via JavaScript
+.not-displayed {
+    display: none;
 }

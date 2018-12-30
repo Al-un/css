@@ -1,6 +1,6 @@
 import '../common/common.scss';
 import './app.scss';
-import * as PageLoader from '../common/pageLoader';
+import * as Common from '../common';
 import './html/home.html';
 import './html/data.html';
 import './html/form.html';
@@ -9,7 +9,7 @@ import './html/notification.html';
 import './html/panel.html';
 
 const onHashChange = async () => {
-  const page = await PageLoader.onHashChange();
+  const page = await Common.onHashChange();
   // Home page specific
   if (page === 'home') {
     document.getElementById('content').classList.remove('container');
@@ -19,4 +19,4 @@ const onHashChange = async () => {
 };
 
 window.onhashchange = onHashChange;
-PageLoader.loadDefaultPage();
+Common.loadDefaultPage();
