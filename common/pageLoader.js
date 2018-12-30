@@ -4,7 +4,7 @@
 
 // Load required pages
 // [TODO] require via a function instead of manually
-const VALID_PAGES = ['data', 'form', 'modal', 'notification', 'panel'];
+const VALID_PAGES = ['home', 'data', 'form', 'modal', 'notification', 'panel'];
 
 // Paths config
 const FOLDER = 'html/';
@@ -30,19 +30,22 @@ export const loadPage = async page => {
 
 /**
  * Hash change listener
+ * @returns loaded page name
  */
-export const onHashChange = () => {
+export const onHashChange = async () => {
   const page = window.location.hash.split('/')[0].replace('#', '');
 
-  if (!page) return;
+  if (!page) return null;
 
-  loadPage(page);
+  await loadPage(page);
+
+  return page;
 };
 
 /**
- * By default, load the form page
+ * By default, load the home page
  */
 export const loadDefaultPage = () => {
-  window.location.hash = '#form';
+  window.location.hash = '#home';
   onHashChange();
 };
