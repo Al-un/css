@@ -3,6 +3,7 @@
   <h1>Form</h1>
 
   <form>
+    <h3>Ordering</h3>
     <label for="form-name">Item Name</label>
     <input id="form-name" type="text" name="name" placeholder="Name" />
     <label for="form-qty">Quantity</label>
@@ -23,6 +24,7 @@
       placeholder="Password"
     />
 
+    <h3>Comment</h3>
     <input type="text" name="Subject" placeholder="Subject" />
     <input type="radio" name="privacy" value="private" checked />Private
     <input type="radio" name="privacy" value="public" />Public
@@ -32,6 +34,11 @@
     <label> <input type="checkbox" name="cc" /> Send me a copy </label>
     <label> <input type="file" name="attach" /> Attach file </label>
 
+    <h3>Submit</h3>
     <button>Submit</button>
+    <div>
+      <input type="reset" value="Cancel" /> <button>Save draft</button>
+      <input type="submit" value="Send" />
+    </div>
   </form>
 </section>
