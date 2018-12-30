@@ -1,0 +1,94 @@
+<!-- Notifications -->
+<section>
+  <div>
+    <h1>Messages</h1>
+
+    <div class="message is-danger is-medium">
+      <div class="message-header">
+        <p>(medium) Error</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">This is an error message</div>
+    </div>
+    <div class="message is-warning is-small">
+      <div class="message-header">
+        <p>(small) Warning</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">This is a warning message</div>
+    </div>
+    <div class="message is-info">
+      <div class="message-header">
+        <p>Info</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">This is an info message</div>
+    </div>
+    <div class="message is-success">
+      <div class="message-header">
+        <p>Success</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">This is a success message</div>
+    </div>
+
+    <div class="message is-warning">
+      <div class="message-body">
+        Bulma messages require a <code>block</code> display content. Replacing
+        <code>div</code> with <code>span</code> leads to having the left border
+        larger (div height) than the colored background (span height)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toast -->
+<section>
+  <div>
+    <h1>Notifications</h1>
+
+    <div>
+      <span>Popping normal toast</span>
+      <button
+        class="button is-info"
+        type="button"
+        onclick="app.popNormalNotif();"
+      >
+        Spawn
+      </button>
+    </div>
+    <div>
+      <span>Popping error toast</span>
+      <button
+        class="button is-danger"
+        type="button"
+        onclick="app.popErrorNotif();"
+      >
+        Spawn
+      </button>
+    </div>
+
+    <div class="message is-warning">
+      <div class="message-body">Requiring a notification container</div>
+    </div>
+  </div>
+</section>
+
+<div class="notification-container">
+  <div id="notification-normal" class="notification is-success not-displayed">
+    <button class="delete" onclick="app.popNormalNotif();"></button> Primar
+    lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+    diam, et dictum <a>felis venenatis</a> efficitur. Sit amet, consectetur
+    adipiscing elit
+  </div>
+  <div id="notification-error" class="notification is-danger not-displayed">
+    <button class="delete" onclick="app.popErrorNotif();"></button> Primar lorem
+    ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+    <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec
+    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+    diam, et dictum <a>felis venenatis</a> efficitur. Sit amet, consectetur
+    adipiscing elit
+  </div>
+</div>

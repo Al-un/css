@@ -1,1 +1,30 @@
 @import '~bulma';
+// DRY
+section {
+    // section-ing
+    @extend .section;
+    /* section title(s) */
+    h1 {
+        @extend .title;
+    }
+    /* section content */
+    &>div {
+        @extend .container;
+        @extend .box;
+        @extend .has-background-white;
+    }
+}
+
+/* Notification column required */
+
+.notification-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    height: 100vh;
+    z-index: 1000;
+}
