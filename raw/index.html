@@ -13,8 +13,11 @@
 
       <!-- Navigation-->
       <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#modal">Modal</a></li>
+        <li><a href="#notification">Notifs</a></li>
+        <li><a href="#panel">Panel</a></li>
       </ul>
 
       <!-- Search -->
@@ -26,172 +29,11 @@
       <a href="#">Sign in</a>
     </nav>
 
+    <!-- Main presentation -->
+    <section>Main presentation</section>
+
     <!-- Main content-->
-    <main>
-      <!-- Main presentation -->
-      <section>Plop</section>
-
-      <!-- Form -->
-      <section>
-        <h1>Form</h1>
-
-        <form>
-          <label for="form-name">Item Name</label>
-          <input id="form-name" type="text" name="name" placeholder="Name" />
-          <label for="form-qty">Quantity</label>
-          <input
-            id="form-qty"
-            type="number"
-            name="age"
-            placeholder="Quantity"
-          />
-          <label for="form-delivery">Delivery</label>
-          <select id="form-delivery" name="category">
-            <option name="delivery1">Supra express</option>
-            <option name="delivery2">A little express</option>
-            <option name="delivery3">Not really express</option>
-          </select>
-          <label for="form-email">Email</label>
-          <input
-            id="form-email"
-            type="email"
-            name="email"
-            placeholder="Email"
-          />
-          <label for="form-pwd">Password</label>
-          <input
-            id="form-pwd"
-            type="password"
-            name="password"
-            placeholder="Password"
-          />
-
-          <input type="text" name="Subject" placeholder="Subject" />
-          <input type="radio" name="privacy" value="private" checked />Private
-          <input type="radio" name="privacy" value="public" />Public
-
-          <textarea name="message" placeholder="Your message"></textarea>
-
-          <label> <input type="checkbox" name="cc" /> Send me a copy </label>
-          <label> <input type="file" name="attach" /> Attach file </label>
-
-          <button>Submit</button>
-        </form>
-      </section>
-
-      <!-- Notifications -->
-      <section>
-        <h1>Notification</h1>
-
-        <div><span>This is an error message</span></div>
-        <div><span>This is a warning message</span></div>
-        <div><span>This is an info message</span></div>
-        <div><span>This is a success message</span></div>
-      </section>
-
-      <!-- Modal -->
-      <section>
-        <h1>Modals</h1>
-
-        <div>
-          <span>Popping normal modal</span> <button type="button">Spawn</button>
-        </div>
-        <div>
-          <span>Popping a long long long modal (scrolling testing)</span>
-          <button type="button">Spawn</button>
-        </div>
-      </section>
-
-      <!-- Toast -->
-      <section>
-        <h1>Toast</h1>
-
-        <div>
-          <span>Popping normal toast</span> <button type="button">Spawn</button>
-        </div>
-        <div>
-          <span>Popping error toast</span> <button type="button">Spawn</button>
-        </div>
-      </section>
-
-      <!-- Loading -->
-      <section>
-        <h1>Loading</h1>
-
-        <div>Spinner, progress bar and stuff</div>
-      </section>
-
-      <!-- Data: list & tables -->
-      <section>
-        <h1>Tables and list</h1>
-
-        <h3>Tables</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Fruit</th>
-              <th>Stock</th>
-              <th>Miam level</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>42</td>
-              <td>Apple</td>
-              <td>Hell a lot</td>
-              <td>+++</td>
-            </tr>
-
-            <tr>
-              <td>1</td>
-              <td>Pineapple</td>
-              <td>OK</td>
-              <td>++</td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>Orange</td>
-              <td>Not enough</td>
-              <td>+++</td>
-            </tr>
-
-            <tr>
-              <td>3</td>
-              <td>Pear</td>
-              <td>To buy later</td>
-              <td>++++</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td>Mango</td>
-              <td>Not the season :(</td>
-              <td>++++...+</td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td>Durian</td>
-              <td>Wait for next year</td>
-              <td>&infin;</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>List</h3>
-        <ul>
-          <li>Apple</li>
-          <li>Pineapple</li>
-          <li>Orange</li>
-          <li>Pear</li>
-          <li>Mango</li>
-          <li>Durian</li>
-        </ul>
-      </section>
-    </main>
+    <main id="content"></main>
 
     <!-- Footer -->
     <footer>Add some footer content</footer>

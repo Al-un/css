@@ -12,9 +12,11 @@ const ManifestPlugin = require('webpack-manifest-plugin');
  * @param {Object} options framework specific parameters
  */
 function devConfig(framework, options) {
+  // When output folder name is different from input folder name
   const outputFolder =
     'output' in framework ? framework.output : framework.folder;
 
+  // Webpack root configuration
   return Object.assign(
     {
       // Input/Outpus management
@@ -57,6 +59,21 @@ function devConfig(framework, options) {
       // Module
       module: {
         rules: [
+          // Dependent HTML files
+          // https://webpack.js.org/loaders/html-loader/#export-into-html-files
+          {
+            test: /\.html$/,
+            exclude: path.resolve(__dirname, framework.folder, 'index.html'),
+            use: [
+              {
+                loader: 'file-loader',
+                options: { name: '[name].[ext]', outputPath: 'html/' }
+              },
+              'extract-loader',
+              { loader: 'html-loader', options: { minimize: true } }
+            ]
+          },
+          // Styles
           {
             test: /\.(scss)$/,
             use: [
