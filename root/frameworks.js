@@ -33,6 +33,7 @@ const frameworks = [
       pros: [
         'Awesome layout management: grid CSS + tiles',
         'Boxes, panels and friends',
+        'Impressive and clear documentation',
         'When properly written, syntax is almost like Enlish. E.g. <code>message is-info</code>',
         '[TBC] unopionated (ex: modal background has to be manually defined)',
         '[TBC] flexible and highly customizable '
