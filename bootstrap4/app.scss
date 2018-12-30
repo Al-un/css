@@ -1,13 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 body {
-    background-color: #ccc;
+    @extend .bg-secondary;
 }
 
 section {
-    background-color: white;
+    @extend .bg-white;
+    @extend .mt-4;
     @extend .mb-5;
     @extend .card-body;
-    border-radius: 8px;
+    @extend .rounded;
+    @extend .border-primary;
 }
 
 h1 {

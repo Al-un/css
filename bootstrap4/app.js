@@ -11,7 +11,6 @@ import './html/panel.html';
 const onHashChange = async () => {
   const page = await PageLoader.onHashChange();
   // Home page specific
-  console.log(`Loading page ${page}`);
   if (page === 'home') {
     document.getElementById('content').classList.remove('container');
   } else {
