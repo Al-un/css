@@ -26,7 +26,8 @@ function devConfig(framework, options) {
       output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist', outputFolder),
-        publicPath: '/'
+        publicPath: '/',
+        library: 'app'
       },
       // Building mode
       mode: 'development',
