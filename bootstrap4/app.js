@@ -3,7 +3,7 @@ import '../common/common.scss';
 import './app.scss';
 // Common JavaScript
 import * as Common from '../common';
-import * as PageLoader from '../common/PageLoader';
+import { onHashChange, loadDefaultPage } from '../common/PageLoader';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
@@ -12,8 +12,8 @@ import './html/modal.html';
 import './html/notification.html';
 import './html/panel.html';
 
-const onHashChange = async () => {
-  const page = await PageLoader.onHashChange();
+const onBootstrapHashChange = async () => {
+  const page = await onHashChange();
   // Home page specific
   if (page === 'home') {
     document.getElementById('content').classList.remove('container');
@@ -22,5 +22,5 @@ const onHashChange = async () => {
   }
 };
 
-window.onhashchange = onHashChange;
-PageLoader.loadDefaultPage();
+window.onhashchange = onBootstrapHashChange;
+loadDefaultPage();
