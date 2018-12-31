@@ -32,9 +32,10 @@ function devConfig(framework, options) {
       resolve: {
         // https://webpack.js.org/configuration/resolve/#resolve-modules
         // https://gist.github.com/sokra/27b24881210b56bbaff7#resolving-options
+        // https://moduscreate.com/blog/es6-es2015-import-no-relative-path-webpack/
         modules: [
           path.resolve(__dirname, 'common'),
-          'node_modules'
+          path.resolve('./node_modules')
         ]
       },
       // Building mode
