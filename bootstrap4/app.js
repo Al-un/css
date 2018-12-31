@@ -1,8 +1,8 @@
 // Styles
-import '../common/common.scss';
+import 'common.scss';
 import './app.scss';
 // Common JavaScript
-import { onHashChange, loadDefaultPage } from '../common/pageLoader.js';
+import { onHashChange, loadDefaultPage } from 'pageLoader.js';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
