@@ -3,6 +3,7 @@ import '../common/common.scss';
 import './app.scss';
 // Common JavaScript
 import * as Common from '../common';
+import { onHashChange, loadDefaultPage } from '../common/PageLoader';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
@@ -11,12 +12,8 @@ import './html/modal.html';
 import './html/notification.html';
 import './html/panel.html';
 
-const onHashChange = async () => {
-  await Common.onHashChange();
-};
-
 window.onhashchange = onHashChange;
-Common.loadDefaultPage();
+loadDefaultPage();
 
 /**
  * Bulma specific stuff
