@@ -1,8 +1,9 @@
 // Styles
-import '../common/common.scss';
+import 'common.scss';
 import './app.scss';
 // Common JavaScript
 import * as Common from '../common';
+import { onHashChange, loadDefaultPage } from 'pageLoader';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
@@ -11,5 +12,5 @@ import './html/modal.html';
 import './html/notification.html';
 import './html/panel.html';
 
-window.onhashchange = Common.onHashChange;
-Common.loadDefaultPage();
+window.onhashchange = onHashChange;
+loadDefaultPage();

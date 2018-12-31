@@ -2,7 +2,7 @@
 import 'common.scss';
 import './app.scss';
 // Common JavaScript
-import { onHashChange, loadDefaultPage } from 'pageLoader.js';
+import { onHashChange, loadDefaultPage } from 'pageLoader';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
