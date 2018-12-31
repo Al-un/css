@@ -3,7 +3,7 @@ import '../common/common.scss';
 import './app.scss';
 // Common JavaScript
 // import * as Common from '../common';
-import { onHashChange, loadDefaultPage } from '../common/PageLoader.js';
+import { onHashChange, loadDefaultPage } from './../common/PageLoader.js';
 // Dependent HTML pages
 import './html/home.html';
 import './html/data.html';
