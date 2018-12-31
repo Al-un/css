@@ -1,0 +1,10 @@
+{
+  "main.js": "https://al-un.github.io/css/foundationmain.js",
+  "html/data.html": "https://al-un.github.io/css/foundationhtml/data.html",
+  "html/form.html": "https://al-un.github.io/css/foundationhtml/form.html",
+  "html/home.html": "https://al-un.github.io/css/foundationhtml/home.html",
+  "html/modal.html": "https://al-un.github.io/css/foundationhtml/modal.html",
+  "html/notification.html": "https://al-un.github.io/css/foundationhtml/notification.html",
+  "html/panel.html": "https://al-un.github.io/css/foundationhtml/panel.html",
+  "index.html": "https://al-un.github.io/css/foundationindex.html"
+}
