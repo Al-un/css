@@ -1,4 +1,10 @@
 {
   "main.js": "https://al-un.github.io/css/bulmamain.js",
+  "html/data.html": "https://al-un.github.io/css/bulmahtml/data.html",
+  "html/form.html": "https://al-un.github.io/css/bulmahtml/form.html",
+  "html/home.html": "https://al-un.github.io/css/bulmahtml/home.html",
+  "html/modal.html": "https://al-un.github.io/css/bulmahtml/modal.html",
+  "html/notification.html": "https://al-un.github.io/css/bulmahtml/notification.html",
+  "html/panel.html": "https://al-un.github.io/css/bulmahtml/panel.html",
   "index.html": "https://al-un.github.io/css/bulmaindex.html"
 }
