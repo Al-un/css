@@ -1,0 +1,19 @@
+// Foundation specific import
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything(true);
+@include foundation-progress-element;
+@include foundation-meter-element;
+// DRY zone
+section {
+    @extend .grid-container;
+    background-color: $white;
+}
+
+// using  color palette: https://foundation.zurb.com/sites/docs/global.html
+body {
+    background-color: $medium-gray;
+}
+
+footer {
+    background-color: $dark-gray;
+}

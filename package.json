@@ -29,6 +29,8 @@
     "bootstrap4-build": "webpack --config bootstrap4/webpack.config.js",
     "bulma": "webpack-dev-server --config bulma/webpack.config.js",
     "bulma-build": "webpack --config bulma/webpack.config.js",
+    "foundation": "webpack-dev-server --config foundation/webpack.config.js",
+    "foundation-build": "webpack --config foundation/webpack.config.js",
     "raw": "webpack-dev-server --config raw/webpack.config.js",
     "raw-build": "webpack --config raw/webpack.config.js",
     "root": "webpack-dev-server --config root/webpack.config.js",
@@ -36,6 +38,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
-    "bulma": "^0.7.2"
+    "bulma": "^0.7.2",
+    "foundation-sites": "^6.5.1",
+    "jquery": "^3.3.1"
   }
 }

@@ -1,5 +1,5 @@
 const frameworks = [
-  // Bootstraps
+  // ---------- Bootstraps -----------------------------------------------------
   {
     header: {
       title: 'Bootstrap4',
@@ -10,7 +10,8 @@ const frameworks = [
       pros: [
         'A lot of utilities and helpers even if it ends up like <code>mt-4 mb-3 pt-2 wtf-7</code>',
         'Embedded JavaScript, convenient for simple stuff such as toggling CSS classes',
-        'Pretty easy to handle once familiar with CSS Grid grammar'
+        'Pretty easy to handle once familiar with CSS Grid grammar',
+        'Card management'
       ],
       cons: [
         'Pretty verbose but I guess it is the burden of most CSS framworks',
@@ -20,9 +21,12 @@ const frameworks = [
     footer: {
       demo: '/css/bootstrap4/',
       docs: 'https://getbootstrap.com/docs/4.2/getting-started/introduction/'
+    },
+    info: {
+      github: 'https://github.com/twbs/bootstrap'
     }
   },
-  // Bulma
+  // ---------- Bulma ----------------------------------------------------------
   {
     header: {
       title: 'Bulma',
@@ -47,8 +51,59 @@ const frameworks = [
     footer: {
       demo: '/css/bulma/',
       docs: 'https://bulma.io/documentation/'
+    },
+    info: {
+      github: 'https://github.com/jgthms/bulma'
+    }
+  },
+  // ---------- Foundation -----------------------------------------------------
+  {
+    header: {
+      title: 'Foundation',
+      icon: ''
+    },
+    content: {
+      misc: null,
+      pros: [
+        'Documentation highlights whenever JavaScript is required',
+        'A lot of mixins for your own S(C|A)SS',
+        'Looks pretty customizable'
+      ],
+      cons: [
+        'I did not find helpers classes very helpful',
+        'Semantic takes a while to get used to: "label" vs "badges", "reveals" ' +
+          ' are "modals", "callout" are "messages" or "alert", "off-canvas" are ' +
+          'not related to <code>canvas</code> tags...',
+        'Badges must have a square shaped content'
+      ]
+    },
+    footer: {
+      demo: '/css/foundation/',
+      docs: 'https://foundation.zurb.com/sites/docs/'
+    },
+    info: {
+      github: 'https://github.com/zurb/foundation-sites'
     }
   }
+  // ----------
+  // {
+  //   header: {
+  //     title: '',
+  //     icon: ''
+  //   },
+  //   content: {
+  //     misc: null,
+  //     pros: [''],
+  //     cons: ['']
+  //   },
+  //   footer: {
+  //     demo: '/css/',
+  //     docs: ''
+  //   },
+  //   info: {
+  //     github: ''
+  //   }
+  // }
 ];
 
 export default frameworks;

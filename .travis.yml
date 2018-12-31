@@ -18,6 +18,7 @@ script:
   - yarn run root-build --output-public-path https://al-un.github.io/css/
   - yarn run bootstrap4-build --output-public-path https://al-un.github.io/css/bootstrap4
   - yarn run bulma-build --output-public-path https://al-un.github.io/css/bulma
+  - yarn run foundation-build --output-public-path https://al-un.github.io/css/foundation
   # Ensure builds are properly done
   - ls dist/
 
